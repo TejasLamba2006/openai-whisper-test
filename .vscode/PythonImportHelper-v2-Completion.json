@@ -1331,11 +1331,29 @@
         "documentation": {}
     },
     {
+        "label": "so",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "so = ort.SessionOptions()\nso.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "so.log_severity_level",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "so.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "sess",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "sess = ort.InferenceSession(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnc\",\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(sess.get_providers())",
+        "peekOfCode": "sess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
         "detail": "main",
         "documentation": {}
     },
