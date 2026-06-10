@@ -1,10 +1,1351 @@
 [
     {
-        "label": "main_export",
-        "importPath": "optimum.exporters.onnx",
-        "description": "optimum.exporters.onnx",
+        "label": "runpy",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "optimum.exporters.onnx",
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "onnx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "onnx",
+        "description": "onnx",
+        "detail": "onnx",
+        "documentation": {}
+    },
+    {
+        "label": "onnxruntime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "onnxruntime",
+        "description": "onnxruntime",
+        "detail": "onnxruntime",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "Tensor",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "default_timer",
+        "importPath": "timeit",
+        "description": "timeit",
+        "isExtraImport": true,
+        "detail": "timeit",
+        "documentation": {}
+    },
+    {
+        "label": "Whisper",
+        "importPath": "model",
+        "description": "model",
+        "isExtraImport": true,
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "ModelDimensions",
+        "importPath": "model",
+        "description": "model",
+        "isExtraImport": true,
+        "detail": "model",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "whisper",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "whisper",
+        "description": "whisper",
+        "detail": "whisper",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "modelPath",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.check",
+        "description": "whisper-onnx-exporter.check",
+        "peekOfCode": "modelPath = \"onnx-models/large-v3-turbo/encoder_fp16.onnx\"\nresult = onnx.checker.check_model(modelPath, full_check = True)\nprint(result)\n#model = onnx.load_model(modelPath, load_external_data=True)\n#print(\"OK\")\nort_sess = ort.InferenceSession(modelPath)\nprint(\"OK 2\")",
+        "detail": "whisper-onnx-exporter.check",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.check",
+        "description": "whisper-onnx-exporter.check",
+        "peekOfCode": "result = onnx.checker.check_model(modelPath, full_check = True)\nprint(result)\n#model = onnx.load_model(modelPath, load_external_data=True)\n#print(\"OK\")\nort_sess = ort.InferenceSession(modelPath)\nprint(\"OK 2\")",
+        "detail": "whisper-onnx-exporter.check",
+        "documentation": {}
+    },
+    {
+        "label": "#model",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.check",
+        "description": "whisper-onnx-exporter.check",
+        "peekOfCode": "#model = onnx.load_model(modelPath, load_external_data=True)\n#print(\"OK\")\nort_sess = ort.InferenceSession(modelPath)\nprint(\"OK 2\")",
+        "detail": "whisper-onnx-exporter.check",
+        "documentation": {}
+    },
+    {
+        "label": "ort_sess",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.check",
+        "description": "whisper-onnx-exporter.check",
+        "peekOfCode": "ort_sess = ort.InferenceSession(modelPath)\nprint(\"OK 2\")",
+        "detail": "whisper-onnx-exporter.check",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "def start(): \n\tprint(\"Using PyTorch version: {}\\n\".format(torch.__version__))\n\tif len(sys.argv) <= 1:\n\t\tprint(\"Usage: python export-whisper-onnx.py whisper-model-name [--export-fp16] [--export-fp16-mixed]\")\n\t\texit(0)\n\tmodelName = sys.argv[1]\n\tvalidModelNames = [\"tiny\", \"tiny.en\", \"base\", \"base.en\", \"small\", \"small.en\", \"medium\", \"medium.en\", \"large\", \"large-v1\", \"large-v2\", \"large-v3\", \"large-v3-turbo\"]\n\tif not modelName in validModelNames:\n\t\tprint(\"Error: model name must be one of {}\".format(\", \".join(validModelNames)))\n\t\texit(1)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tmodelName",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tmodelName = sys.argv[1]\n\tvalidModelNames = [\"tiny\", \"tiny.en\", \"base\", \"base.en\", \"small\", \"small.en\", \"medium\", \"medium.en\", \"large\", \"large-v1\", \"large-v2\", \"large-v3\", \"large-v3-turbo\"]\n\tif not modelName in validModelNames:\n\t\tprint(\"Error: model name must be one of {}\".format(\", \".join(validModelNames)))\n\t\texit(1)\n\texportFP16 = '--export-fp16' in sys.argv\n\texportFP16Mixed = '--export-fp16-mixed' in sys.argv\n\tstartTime = timer()\n\tprint(\"\")\n\tprint(\"Loading PyTorch model..\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tvalidModelNames",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tvalidModelNames = [\"tiny\", \"tiny.en\", \"base\", \"base.en\", \"small\", \"small.en\", \"medium\", \"medium.en\", \"large\", \"large-v1\", \"large-v2\", \"large-v3\", \"large-v3-turbo\"]\n\tif not modelName in validModelNames:\n\t\tprint(\"Error: model name must be one of {}\".format(\", \".join(validModelNames)))\n\t\texit(1)\n\texportFP16 = '--export-fp16' in sys.argv\n\texportFP16Mixed = '--export-fp16-mixed' in sys.argv\n\tstartTime = timer()\n\tprint(\"\")\n\tprint(\"Loading PyTorch model..\")\n\tcheckpoint = torch.load(\"pytorch-models/{}.pt\".format(modelName), map_location=torch.device('cpu'))",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\texportFP16",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\texportFP16 = '--export-fp16' in sys.argv\n\texportFP16Mixed = '--export-fp16-mixed' in sys.argv\n\tstartTime = timer()\n\tprint(\"\")\n\tprint(\"Loading PyTorch model..\")\n\tcheckpoint = torch.load(\"pytorch-models/{}.pt\".format(modelName), map_location=torch.device('cpu'))\n\tmodelDims = ModelDimensions(**checkpoint[\"dims\"])\n\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\texportFP16Mixed",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\texportFP16Mixed = '--export-fp16-mixed' in sys.argv\n\tstartTime = timer()\n\tprint(\"\")\n\tprint(\"Loading PyTorch model..\")\n\tcheckpoint = torch.load(\"pytorch-models/{}.pt\".format(modelName), map_location=torch.device('cpu'))\n\tmodelDims = ModelDimensions(**checkpoint[\"dims\"])\n\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tstartTime",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tstartTime = timer()\n\tprint(\"\")\n\tprint(\"Loading PyTorch model..\")\n\tcheckpoint = torch.load(\"pytorch-models/{}.pt\".format(modelName), map_location=torch.device('cpu'))\n\tmodelDims = ModelDimensions(**checkpoint[\"dims\"])\n\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1\n\taudioEncoder = whisper.encoder",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tcheckpoint",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tcheckpoint = torch.load(\"pytorch-models/{}.pt\".format(modelName), map_location=torch.device('cpu'))\n\tmodelDims = ModelDimensions(**checkpoint[\"dims\"])\n\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1\n\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tmodelDims",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tmodelDims = ModelDimensions(**checkpoint[\"dims\"])\n\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1\n\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\twhisper",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\twhisper = Whisper(modelDims, modelName)\n\twhisper.load_state_dict(checkpoint[\"model_state_dict\"])\n\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1\n\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\twhisper",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\twhisper = whisper.to(\"cpu\")\n\tbatchSize = 1\n\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tbatchSize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tbatchSize = 1\n\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\taudioEncoder",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\taudioEncoder = whisper.encoder\n\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\taudioEncoderRandomInputs",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\taudioEncoderRandomInputs = torch.randn(batchSize, modelDims.n_mels, modelDims.n_audio_ctx * 2)\n\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tencodedFeatures",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tencodedFeatures = whisper.encoder(audioEncoderRandomInputs)\n\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")\n\ttorch.onnx.export(",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\toutputDir",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\toutputDir = \"onnx-models/{}\".format(modelName)\n\tshutil.rmtree(outputDir, ignore_errors = True)\n\tos.makedirs(outputDir, exist_ok=True)\n\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")\n\ttorch.onnx.export(\n\t\taudioEncoder, ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\toutputEncoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\toutputEncoderFilename = \"{}/encoder.onnx\".format(outputDir)\n\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")\n\ttorch.onnx.export(\n\t\taudioEncoder, \n\t\taudioEncoderRandomInputs, \n\t\toutputEncoderFilename, \n\t\tinput_names=[\"mel\"], ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\toutputDecoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\toutputDecoderFilename = \"{}/decoder.onnx\".format(outputDir)\n\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")\n\ttorch.onnx.export(\n\t\taudioEncoder, \n\t\taudioEncoderRandomInputs, \n\t\toutputEncoderFilename, \n\t\tinput_names=[\"mel\"], \n\t\toutput_names=[\"output\"], ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\topset_version",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\topset_version = 17\n\tprint(\"\")\n\tprint(\"Exporting audio encoder..\")\n\ttorch.onnx.export(\n\t\taudioEncoder, \n\t\taudioEncoderRandomInputs, \n\t\toutputEncoderFilename, \n\t\tinput_names=[\"mel\"], \n\t\toutput_names=[\"output\"], \n\t\topset_version=opset_version, ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\ttextDecoder",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\ttextDecoder = whisper.decoder\n\ttokens = torch.tensor([[0]], dtype=torch.int64)\n\tkvCache = torch.from_numpy(whisper.new_kv_cache(batchSize, 1))\n\toffset = 0\n\taudioDecoderInputs = (tokens, encodedFeatures, kvCache, offset)\n\ttorch.onnx.export(\n\t\ttextDecoder, \n\t\taudioDecoderInputs, \n\t\toutputDecoderFilename, \n\t\tinput_names=[\"tokens\", \"audio_features\", \"kv_cache\", \"offset\"], ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\ttokens",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\ttokens = torch.tensor([[0]], dtype=torch.int64)\n\tkvCache = torch.from_numpy(whisper.new_kv_cache(batchSize, 1))\n\toffset = 0\n\taudioDecoderInputs = (tokens, encodedFeatures, kvCache, offset)\n\ttorch.onnx.export(\n\t\ttextDecoder, \n\t\taudioDecoderInputs, \n\t\toutputDecoderFilename, \n\t\tinput_names=[\"tokens\", \"audio_features\", \"kv_cache\", \"offset\"], \n\t\toutput_names=[\"logits\", \"output_kv_cache\", \"cross_attention_qks\"],",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\tkvCache",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\tkvCache = torch.from_numpy(whisper.new_kv_cache(batchSize, 1))\n\toffset = 0\n\taudioDecoderInputs = (tokens, encodedFeatures, kvCache, offset)\n\ttorch.onnx.export(\n\t\ttextDecoder, \n\t\taudioDecoderInputs, \n\t\toutputDecoderFilename, \n\t\tinput_names=[\"tokens\", \"audio_features\", \"kv_cache\", \"offset\"], \n\t\toutput_names=[\"logits\", \"output_kv_cache\", \"cross_attention_qks\"],\n\t\tdynamic_axes={",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\toffset",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\toffset = 0\n\taudioDecoderInputs = (tokens, encodedFeatures, kvCache, offset)\n\ttorch.onnx.export(\n\t\ttextDecoder, \n\t\taudioDecoderInputs, \n\t\toutputDecoderFilename, \n\t\tinput_names=[\"tokens\", \"audio_features\", \"kv_cache\", \"offset\"], \n\t\toutput_names=[\"logits\", \"output_kv_cache\", \"cross_attention_qks\"],\n\t\tdynamic_axes={\n\t\t\t\"tokens\": [0, 1],",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\taudioDecoderInputs",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\taudioDecoderInputs = (tokens, encodedFeatures, kvCache, offset)\n\ttorch.onnx.export(\n\t\ttextDecoder, \n\t\taudioDecoderInputs, \n\t\toutputDecoderFilename, \n\t\tinput_names=[\"tokens\", \"audio_features\", \"kv_cache\", \"offset\"], \n\t\toutput_names=[\"logits\", \"output_kv_cache\", \"cross_attention_qks\"],\n\t\tdynamic_axes={\n\t\t\t\"tokens\": [0, 1],\n\t\t\t\"audio_features\": [0],",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toutputFP16EncoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\toutputFP16EncoderFilename = \"{}/encoder_fp16.onnx\".format(outputDir)\n\t\toutputFP16DecoderFilename = \"{}/decoder_fp16.onnx\".format(outputDir)\t\t\n\t\tprint(\"\")\n\t\tprint(\"Quantizing encoder to 16-bits..\")\n\t\timport onnx\n\t\tfrom onnxconverter_common import float16\n\t\tonnx.checker.check_model(outputEncoderFilename, full_check = True)\n\t\tencoderOnnx = onnx.load(outputEncoderFilename)\n\t\tencoderOnnx_fp16 = float16.convert_float_to_float16(encoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(encoderOnnx_fp16, outputFP16EncoderFilename)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toutputFP16DecoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\toutputFP16DecoderFilename = \"{}/decoder_fp16.onnx\".format(outputDir)\t\t\n\t\tprint(\"\")\n\t\tprint(\"Quantizing encoder to 16-bits..\")\n\t\timport onnx\n\t\tfrom onnxconverter_common import float16\n\t\tonnx.checker.check_model(outputEncoderFilename, full_check = True)\n\t\tencoderOnnx = onnx.load(outputEncoderFilename)\n\t\tencoderOnnx_fp16 = float16.convert_float_to_float16(encoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(encoderOnnx_fp16, outputFP16EncoderFilename)\n\t\tprint(\"\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tencoderOnnx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tencoderOnnx = onnx.load(outputEncoderFilename)\n\t\tencoderOnnx_fp16 = float16.convert_float_to_float16(encoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(encoderOnnx_fp16, outputFP16EncoderFilename)\n\t\tprint(\"\")\n\t\tprint(\"Quantizing decoder to 16-bits..\")\n\t\tonnx.checker.check_model(outputDecoderFilename, full_check = True)\n\t\tdecoderOnnx = onnx.load(outputDecoderFilename)\n\t\tdecoderOnnx_fp16 = float16.convert_float_to_float16(decoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(decoderOnnx_fp16, outputFP16DecoderFilename)\n\tif exportFP16Mixed:",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tencoderOnnx_fp16",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tencoderOnnx_fp16 = float16.convert_float_to_float16(encoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(encoderOnnx_fp16, outputFP16EncoderFilename)\n\t\tprint(\"\")\n\t\tprint(\"Quantizing decoder to 16-bits..\")\n\t\tonnx.checker.check_model(outputDecoderFilename, full_check = True)\n\t\tdecoderOnnx = onnx.load(outputDecoderFilename)\n\t\tdecoderOnnx_fp16 = float16.convert_float_to_float16(decoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(decoderOnnx_fp16, outputFP16DecoderFilename)\n\tif exportFP16Mixed:\n\t\toutputMixedPrecisionEncoderFilename = \"{}/encoder_fp16_mixed.onnx\".format(outputDir)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdecoderOnnx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tdecoderOnnx = onnx.load(outputDecoderFilename)\n\t\tdecoderOnnx_fp16 = float16.convert_float_to_float16(decoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(decoderOnnx_fp16, outputFP16DecoderFilename)\n\tif exportFP16Mixed:\n\t\toutputMixedPrecisionEncoderFilename = \"{}/encoder_fp16_mixed.onnx\".format(outputDir)\n\t\toutputMixedPrecisionDecoderFilename = \"{}/decoder_fp16_mixed.onnx\".format(outputDir)\t\n\t\timport onnx\n\t\tfrom onnxconverter_common import auto_convert_mixed_precision\n\t\timport numpy as np\n\t\tdef validate(res1, res2):",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdecoderOnnx_fp16",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tdecoderOnnx_fp16 = float16.convert_float_to_float16(decoderOnnx, keep_io_types=True, disable_shape_infer=True)\n\t\tonnx.save(decoderOnnx_fp16, outputFP16DecoderFilename)\n\tif exportFP16Mixed:\n\t\toutputMixedPrecisionEncoderFilename = \"{}/encoder_fp16_mixed.onnx\".format(outputDir)\n\t\toutputMixedPrecisionDecoderFilename = \"{}/decoder_fp16_mixed.onnx\".format(outputDir)\t\n\t\timport onnx\n\t\tfrom onnxconverter_common import auto_convert_mixed_precision\n\t\timport numpy as np\n\t\tdef validate(res1, res2):\n\t\t\tfor r1, r2 in zip(res1, res2):",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toutputMixedPrecisionEncoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\toutputMixedPrecisionEncoderFilename = \"{}/encoder_fp16_mixed.onnx\".format(outputDir)\n\t\toutputMixedPrecisionDecoderFilename = \"{}/decoder_fp16_mixed.onnx\".format(outputDir)\t\n\t\timport onnx\n\t\tfrom onnxconverter_common import auto_convert_mixed_precision\n\t\timport numpy as np\n\t\tdef validate(res1, res2):\n\t\t\tfor r1, r2 in zip(res1, res2):\n\t\t\t\tif not np.allclose(r1, r2, rtol=0.01, atol=0.1):\n\t\t\t\t\treturn False\n\t\t\treturn True",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toutputMixedPrecisionDecoderFilename",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\toutputMixedPrecisionDecoderFilename = \"{}/decoder_fp16_mixed.onnx\".format(outputDir)\t\n\t\timport onnx\n\t\tfrom onnxconverter_common import auto_convert_mixed_precision\n\t\timport numpy as np\n\t\tdef validate(res1, res2):\n\t\t\tfor r1, r2 in zip(res1, res2):\n\t\t\t\tif not np.allclose(r1, r2, rtol=0.01, atol=0.1):\n\t\t\t\t\treturn False\n\t\t\treturn True\n\t\tprint(\"\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tencoderOnnx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tencoderOnnx = onnx.load(\"{}/encoder.onnx\".format(outputDir))\n\t\tencoderOnnx_fp16_mixed = auto_convert_mixed_precision(\n\t\t\tencoderOnnx, \n\t\t\t{ \n\t\t\t\t'mel': audioEncoderRandomInputs.detach().numpy() \n\t\t\t}, \n\t\t\tvalidate_fn=validate,\n\t\t\tkeep_io_types=True)\n\t\tonnx.save(encoderOnnx_fp16_mixed, outputMixedPrecisionEncoderFilename.format(outputDir))\n\t\tprint(\"\")",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tencoderOnnx_fp16_mixed",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tencoderOnnx_fp16_mixed = auto_convert_mixed_precision(\n\t\t\tencoderOnnx, \n\t\t\t{ \n\t\t\t\t'mel': audioEncoderRandomInputs.detach().numpy() \n\t\t\t}, \n\t\t\tvalidate_fn=validate,\n\t\t\tkeep_io_types=True)\n\t\tonnx.save(encoderOnnx_fp16_mixed, outputMixedPrecisionEncoderFilename.format(outputDir))\n\t\tprint(\"\")\n\t\tprint(\"Quantizing decoder to 16-bits mixed-precision..\")\t\t",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdecoderOnnx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tdecoderOnnx = onnx.load(\"{}/decoder.onnx\".format(outputDir))\n\t\tdecoderOnnx_fp16_mixed = auto_convert_mixed_precision(\n\t\t\tdecoderOnnx, \n\t\t\t{ \n\t\t\t\t'tokens': tokens.detach().numpy(), \n\t\t\t\t'audio_features': encodedFeatures.detach().numpy(), \n\t\t\t\t'kv_cache': kvCache.detach().numpy(), \n\t\t\t\t'offset': np.array((offset)).astype(np.int64)\n\t\t\t}, \n\t\t\tvalidate_fn=validate, ",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdecoderOnnx_fp16_mixed",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.export-whisper-onnx",
+        "description": "whisper-onnx-exporter.export-whisper-onnx",
+        "peekOfCode": "\t\tdecoderOnnx_fp16_mixed = auto_convert_mixed_precision(\n\t\t\tdecoderOnnx, \n\t\t\t{ \n\t\t\t\t'tokens': tokens.detach().numpy(), \n\t\t\t\t'audio_features': encodedFeatures.detach().numpy(), \n\t\t\t\t'kv_cache': kvCache.detach().numpy(), \n\t\t\t\t'offset': np.array((offset)).astype(np.int64)\n\t\t\t}, \n\t\t\tvalidate_fn=validate, \n\t\t\tkeep_io_types=True)",
+        "detail": "whisper-onnx-exporter.export-whisper-onnx",
+        "documentation": {}
+    },
+    {
+        "label": "ModelDimensions",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class ModelDimensions:\n\tn_mels: int\n\tn_audio_ctx: int\n\tn_audio_state: int\n\tn_audio_head: int\n\tn_audio_layer: int\n\tn_vocab: int\n\tn_text_ctx: int\n\tn_text_state: int\n\tn_text_head: int",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "LayerNorm",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class LayerNorm(nn.LayerNorm):\n\tdef forward(self, x: Tensor) -> Tensor:\n\t\treturn super().forward(x.float()).type(x.dtype)\nclass Linear(nn.Linear):\n\tdef forward(self, x: Tensor) -> Tensor:\n\t\treturn F.linear(x, self.weight.to(x.dtype), None if self.bias is None else self.bias.to(x.dtype))\nclass Conv1d(nn.Conv1d):\n\tdef _conv_forward(self, x: Tensor, weight: Tensor, bias: Optional[Tensor]) -> Tensor:\n\t\treturn super()._conv_forward(x, weight.to(x.dtype), None if bias is None else bias.to(x.dtype))\ndef sinusoids(length, channels, max_timescale=10000):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "Linear",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class Linear(nn.Linear):\n\tdef forward(self, x: Tensor) -> Tensor:\n\t\treturn F.linear(x, self.weight.to(x.dtype), None if self.bias is None else self.bias.to(x.dtype))\nclass Conv1d(nn.Conv1d):\n\tdef _conv_forward(self, x: Tensor, weight: Tensor, bias: Optional[Tensor]) -> Tensor:\n\t\treturn super()._conv_forward(x, weight.to(x.dtype), None if bias is None else bias.to(x.dtype))\ndef sinusoids(length, channels, max_timescale=10000):\n\t\"\"\"Returns sinusoids for positional embedding\"\"\"\n\tassert channels % 2 == 0\n\tlog_timescale_increment = np.log(max_timescale) / (channels // 2 - 1)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "Conv1d",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class Conv1d(nn.Conv1d):\n\tdef _conv_forward(self, x: Tensor, weight: Tensor, bias: Optional[Tensor]) -> Tensor:\n\t\treturn super()._conv_forward(x, weight.to(x.dtype), None if bias is None else bias.to(x.dtype))\ndef sinusoids(length, channels, max_timescale=10000):\n\t\"\"\"Returns sinusoids for positional embedding\"\"\"\n\tassert channels % 2 == 0\n\tlog_timescale_increment = np.log(max_timescale) / (channels // 2 - 1)\n\tinv_timescales = torch.exp(-log_timescale_increment * torch.arange(channels // 2))\n\tscaled_time = torch.arange(length)[:, np.newaxis] * inv_timescales[np.newaxis, :]\n\treturn torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "MultiHeadAttention",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class MultiHeadAttention(nn.Module):\n\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "ResidualAttentionBlock",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()\n\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)\n\t\tself.attn_ln = LayerNorm(n_state)\n\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "AudioEncoder",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class AudioEncoder(nn.Module):\n\tdef __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)\n\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head) for _ in range(n_layer)])\n\t\tself.ln_post = LayerNorm(n_state)\n\tdef forward(self, x: Tensor):\n\t\t\"\"\"",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "TextDecoder",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class TextDecoder(nn.Module):\n\tdef __init__(self, n_vocab: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.token_embedding = nn.Embedding(n_vocab, n_state)\n\t\tself.positional_embedding = nn.Parameter(torch.empty(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head, cross_attention=True) for _ in range(n_layer)])\n\t\tself.ln = LayerNorm(n_state)\n\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "Whisper",
+        "kind": 6,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "class Whisper(nn.Module):\n\tdef __init__(self, dims: ModelDimensions, model: str):\n\t\tsuper().__init__()\n\t\tself.type = model\n\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,\n\t\t\tself.dims.n_audio_ctx,\n\t\t\tself.dims.n_audio_state,\n\t\t\tself.dims.n_audio_head,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "sinusoids",
+        "kind": 2,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "def sinusoids(length, channels, max_timescale=10000):\n\t\"\"\"Returns sinusoids for positional embedding\"\"\"\n\tassert channels % 2 == 0\n\tlog_timescale_increment = np.log(max_timescale) / (channels // 2 - 1)\n\tinv_timescales = torch.exp(-log_timescale_increment * torch.arange(channels // 2))\n\tscaled_time = torch.arange(length)[:, np.newaxis] * inv_timescales[np.newaxis, :]\n\treturn torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)\nclass MultiHeadAttention(nn.Module):\n\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\tlog_timescale_increment",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\tlog_timescale_increment = np.log(max_timescale) / (channels // 2 - 1)\n\tinv_timescales = torch.exp(-log_timescale_increment * torch.arange(channels // 2))\n\tscaled_time = torch.arange(length)[:, np.newaxis] * inv_timescales[np.newaxis, :]\n\treturn torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)\nclass MultiHeadAttention(nn.Module):\n\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\tinv_timescales",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\tinv_timescales = torch.exp(-log_timescale_increment * torch.arange(channels // 2))\n\tscaled_time = torch.arange(length)[:, np.newaxis] * inv_timescales[np.newaxis, :]\n\treturn torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)\nclass MultiHeadAttention(nn.Module):\n\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\tscaled_time",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\tscaled_time = torch.arange(length)[:, np.newaxis] * inv_timescales[np.newaxis, :]\n\treturn torch.cat([torch.sin(scaled_time), torch.cos(scaled_time)], dim=1)\nclass MultiHeadAttention(nn.Module):\n\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\tlayer_count",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\tlayer_count = 0\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.n_head",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.n_head = n_head\n\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.query",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.query = Linear(n_state, n_state)\n\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.key",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.key = Linear(n_state, n_state, bias=False)\n\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.value",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.value = Linear(n_state, n_state)\n\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.out",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.out = Linear(n_state, n_state)\n\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.layer_id",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.layer_id = MultiHeadAttention.layer_count\n\t\tMultiHeadAttention.layer_count += 1\n\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,\n\t):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.n_ctx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.n_ctx = n_ctx\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,\n\t):\n\t\tq = self.query(x)\n\t\tk = self.key(x if xa is None else xa)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tq",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tq = self.query(x)\n\t\tk = self.key(x if xa is None else xa)\n\t\tv = self.value(x if xa is None else xa)\n\t\tif kv_cache is not None and k.shape[1] <= self.n_ctx:\n\t\t\tlayer_count = kv_cache.shape[0] // 2\n\t\t\tkey_id = self.layer_id - layer_count\n\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tk",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tk = self.key(x if xa is None else xa)\n\t\tv = self.value(x if xa is None else xa)\n\t\tif kv_cache is not None and k.shape[1] <= self.n_ctx:\n\t\t\tlayer_count = kv_cache.shape[0] // 2\n\t\t\tkey_id = self.layer_id - layer_count\n\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tv",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tv = self.value(x if xa is None else xa)\n\t\tif kv_cache is not None and k.shape[1] <= self.n_ctx:\n\t\t\tlayer_count = kv_cache.shape[0] // 2\n\t\t\tkey_id = self.layer_id - layer_count\n\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tlayer_count",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tlayer_count = kv_cache.shape[0] // 2\n\t\t\tkey_id = self.layer_id - layer_count\n\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tkey_id",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tkey_id = self.layer_id - layer_count\n\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk\n\tdef qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tvalue_id",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tvalue_id = key_id + 1\n\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk\n\tdef qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):\n\t\tn_batch, n_ctx, n_state = q.shape",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = k.shape[1]\n\t\t\tkv_cache[key_id, :, -size:, :] = k\n\t\t\tkv_cache[value_id, :, -size:, :] = v\n\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk\n\tdef qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):\n\t\tn_batch, n_ctx, n_state = q.shape\n\t\tscale = (n_state // self.n_head)**-0.25",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tk",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tk = kv_cache[key_id]\n\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk\n\tdef qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):\n\t\tn_batch, n_ctx, n_state = q.shape\n\t\tscale = (n_state // self.n_head)**-0.25\n\t\tq = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3) * scale\n\t\tk = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale\n\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tv",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tv = kv_cache[value_id]\n\t\twv, qk = self.qkv_attention(q, k, v, mask)\n\t\treturn self.out(wv), qk\n\tdef qkv_attention(self, q: Tensor, k: Tensor, v: Tensor, mask: Optional[Tensor] = None):\n\t\tn_batch, n_ctx, n_state = q.shape\n\t\tscale = (n_state // self.n_head)**-0.25\n\t\tq = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3) * scale\n\t\tk = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale\n\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)\n\t\tqk = q @ k",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tscale",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tscale = (n_state // self.n_head)**-0.25\n\t\tq = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3) * scale\n\t\tk = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale\n\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)\n\t\tqk = q @ k\n\t\tif mask is not None:\n\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tq",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tq = q.view(*q.shape[:2], self.n_head, -1).permute(0, 2, 1, 3) * scale\n\t\tk = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale\n\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)\n\t\tqk = q @ k\n\t\tif mask is not None:\n\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tk",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tk = k.view(*k.shape[:2], self.n_head, -1).permute(0, 2, 3, 1) * scale\n\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)\n\t\tqk = q @ k\n\t\tif mask is not None:\n\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tv",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tv = v.view(*v.shape[:2], self.n_head, -1).permute(0, 2, 1, 3)\n\t\tqk = q @ k\n\t\tif mask is not None:\n\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()\n\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tqk",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tqk = q @ k\n\t\tif mask is not None:\n\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()\n\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)\n\t\tself.attn_ln = LayerNorm(n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tqk",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tqk = qk + mask[:n_ctx, :n_ctx]\n\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()\n\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)\n\t\tself.attn_ln = LayerNorm(n_state)\n\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tw",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tw = F.softmax(qk.float(), dim=-1).to(q.dtype)\n\t\treturn (w @ v).permute(0, 2, 1, 3).flatten(start_dim=2), qk.detach()\nclass ResidualAttentionBlock(nn.Module):\n\tdef __init__(self, n_ctx: int, n_state: int, n_head: int, cross_attention: bool = False):\n\t\tsuper().__init__()\n\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)\n\t\tself.attn_ln = LayerNorm(n_state)\n\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.attn",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.attn = MultiHeadAttention(n_ctx, n_state, n_head)\n\t\tself.attn_ln = LayerNorm(n_state)\n\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.attn_ln",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.attn_ln = LayerNorm(n_state)\n\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.cross_attn",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.cross_attn = MultiHeadAttention(n_ctx, n_state, n_head) if cross_attention else None\n\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.cross_attn_ln",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.cross_attn_ln = LayerNorm(n_state) if cross_attention else None\n\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tn_mlp",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tn_mlp = n_state * 4\n\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,\n\t):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.mlp",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.mlp = nn.Sequential(Linear(n_state, n_mlp), nn.GELU(), Linear(n_mlp, n_state))\n\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,\n\t):\n\t\tattentionWeights, attentionQK = self.attn(self.attn_ln(x), mask=mask, kv_cache=kv_cache)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.mlp_ln",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.mlp_ln = LayerNorm(n_state)\n\tdef forward(\n\t\tself,\n\t\tx: Tensor,\n\t\txa: Optional[Tensor] = None,\n\t\tmask: Optional[Tensor] = None,\n\t\tkv_cache: Optional[dict] = None,\n\t):\n\t\tattentionWeights, attentionQK = self.attn(self.attn_ln(x), mask=mask, kv_cache=kv_cache)\n\t\tx = x + attentionWeights",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = x + attentionWeights\n\t\tif self.cross_attn:\n\t\t\tcrossAttentionWeights, crossAttentionQK = self.cross_attn(self.cross_attn_ln(x), xa, kv_cache=kv_cache)\n\t\t\tx = x + crossAttentionWeights\n\t\telse:\n\t\t\tcrossAttentionWeights = None\n\t\t\tcrossAttentionQK = None\n\t\tx = x + self.mlp(self.mlp_ln(x))\n\t\treturn x, crossAttentionQK\nclass AudioEncoder(nn.Module):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tx = x + crossAttentionWeights\n\t\telse:\n\t\t\tcrossAttentionWeights = None\n\t\t\tcrossAttentionQK = None\n\t\tx = x + self.mlp(self.mlp_ln(x))\n\t\treturn x, crossAttentionQK\nclass AudioEncoder(nn.Module):\n\tdef __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcrossAttentionWeights",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tcrossAttentionWeights = None\n\t\t\tcrossAttentionQK = None\n\t\tx = x + self.mlp(self.mlp_ln(x))\n\t\treturn x, crossAttentionQK\nclass AudioEncoder(nn.Module):\n\tdef __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)\n\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcrossAttentionQK",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tcrossAttentionQK = None\n\t\tx = x + self.mlp(self.mlp_ln(x))\n\t\treturn x, crossAttentionQK\nclass AudioEncoder(nn.Module):\n\tdef __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)\n\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head) for _ in range(n_layer)])",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = x + self.mlp(self.mlp_ln(x))\n\t\treturn x, crossAttentionQK\nclass AudioEncoder(nn.Module):\n\tdef __init__(self, n_mels: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)\n\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head) for _ in range(n_layer)])\n\t\tself.ln_post = LayerNorm(n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.conv1",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.conv1 = Conv1d(n_mels, n_state, kernel_size=3, padding=1)\n\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head) for _ in range(n_layer)])\n\t\tself.ln_post = LayerNorm(n_state)\n\tdef forward(self, x: Tensor):\n\t\t\"\"\"\n\t\tx : torch.Tensor, shape = (batch_size, n_mels, n_ctx)\n\t\t\tthe mel spectrogram of the audio\n\t\t\"\"\"",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.conv2",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.conv2 = Conv1d(n_state, n_state, kernel_size=3, stride=2, padding=1)\n\t\tself.register_buffer(\"positional_embedding\", sinusoids(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head) for _ in range(n_layer)])\n\t\tself.ln_post = LayerNorm(n_state)\n\tdef forward(self, x: Tensor):\n\t\t\"\"\"\n\t\tx : torch.Tensor, shape = (batch_size, n_mels, n_ctx)\n\t\t\tthe mel spectrogram of the audio\n\t\t\"\"\"\n\t\tx = F.gelu(self.conv1(x))",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.ln_post",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.ln_post = LayerNorm(n_state)\n\tdef forward(self, x: Tensor):\n\t\t\"\"\"\n\t\tx : torch.Tensor, shape = (batch_size, n_mels, n_ctx)\n\t\t\tthe mel spectrogram of the audio\n\t\t\"\"\"\n\t\tx = F.gelu(self.conv1(x))\n\t\tx = F.gelu(self.conv2(x))\n\t\tx = x.permute(0, 2, 1)\n\t\tassert x.shape[1:] == self.positional_embedding.shape, \"incorrect audio shape\"",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = F.gelu(self.conv1(x))\n\t\tx = F.gelu(self.conv2(x))\n\t\tx = x.permute(0, 2, 1)\n\t\tassert x.shape[1:] == self.positional_embedding.shape, \"incorrect audio shape\"\n\t\tx = (x + self.positional_embedding).to(x.dtype)\n\t\tfor block in self.blocks:\n\t\t\tx, _, = block(x)\n\t\tx = self.ln_post(x)\n\t\treturn x\nclass TextDecoder(nn.Module):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = F.gelu(self.conv2(x))\n\t\tx = x.permute(0, 2, 1)\n\t\tassert x.shape[1:] == self.positional_embedding.shape, \"incorrect audio shape\"\n\t\tx = (x + self.positional_embedding).to(x.dtype)\n\t\tfor block in self.blocks:\n\t\t\tx, _, = block(x)\n\t\tx = self.ln_post(x)\n\t\treturn x\nclass TextDecoder(nn.Module):\n\tdef __init__(self, n_vocab: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = x.permute(0, 2, 1)\n\t\tassert x.shape[1:] == self.positional_embedding.shape, \"incorrect audio shape\"\n\t\tx = (x + self.positional_embedding).to(x.dtype)\n\t\tfor block in self.blocks:\n\t\t\tx, _, = block(x)\n\t\tx = self.ln_post(x)\n\t\treturn x\nclass TextDecoder(nn.Module):\n\tdef __init__(self, n_vocab: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = (x + self.positional_embedding).to(x.dtype)\n\t\tfor block in self.blocks:\n\t\t\tx, _, = block(x)\n\t\tx = self.ln_post(x)\n\t\treturn x\nclass TextDecoder(nn.Module):\n\tdef __init__(self, n_vocab: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.token_embedding = nn.Embedding(n_vocab, n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = self.ln_post(x)\n\t\treturn x\nclass TextDecoder(nn.Module):\n\tdef __init__(self, n_vocab: int, n_ctx: int, n_state: int, n_head: int, n_layer: int):\n\t\tsuper().__init__()\n\t\tself.n_head = n_head\n\t\tself.token_embedding = nn.Embedding(n_vocab, n_state)\n\t\tself.positional_embedding = nn.Parameter(torch.empty(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head, cross_attention=True) for _ in range(n_layer)])\n\t\tself.ln = LayerNorm(n_state)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.n_head",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.n_head = n_head\n\t\tself.token_embedding = nn.Embedding(n_vocab, n_state)\n\t\tself.positional_embedding = nn.Parameter(torch.empty(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head, cross_attention=True) for _ in range(n_layer)])\n\t\tself.ln = LayerNorm(n_state)\n\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)\n\tdef forward(self, x: Tensor, xa: Tensor, kv_cache: Optional[Tensor] = None, offset: Optional[Tensor] = 0):\n\t\t\"\"\"\n\t\tx : torch.LongTensor, shape = (batch_size, <= n_ctx)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.token_embedding",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.token_embedding = nn.Embedding(n_vocab, n_state)\n\t\tself.positional_embedding = nn.Parameter(torch.empty(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head, cross_attention=True) for _ in range(n_layer)])\n\t\tself.ln = LayerNorm(n_state)\n\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)\n\tdef forward(self, x: Tensor, xa: Tensor, kv_cache: Optional[Tensor] = None, offset: Optional[Tensor] = 0):\n\t\t\"\"\"\n\t\tx : torch.LongTensor, shape = (batch_size, <= n_ctx)\n\t\t\tthe text tokens",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.positional_embedding",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.positional_embedding = nn.Parameter(torch.empty(n_ctx, n_state))\n\t\tself.blocks: Iterable[ResidualAttentionBlock] = nn.ModuleList([ResidualAttentionBlock(n_ctx, n_state, n_head, cross_attention=True) for _ in range(n_layer)])\n\t\tself.ln = LayerNorm(n_state)\n\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)\n\tdef forward(self, x: Tensor, xa: Tensor, kv_cache: Optional[Tensor] = None, offset: Optional[Tensor] = 0):\n\t\t\"\"\"\n\t\tx : torch.LongTensor, shape = (batch_size, <= n_ctx)\n\t\t\tthe text tokens\n\t\txa : torch.Tensor, shape = (batch_size, n_mels, n_audio_ctx)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.ln",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.ln = LayerNorm(n_state)\n\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)\n\tdef forward(self, x: Tensor, xa: Tensor, kv_cache: Optional[Tensor] = None, offset: Optional[Tensor] = 0):\n\t\t\"\"\"\n\t\tx : torch.LongTensor, shape = (batch_size, <= n_ctx)\n\t\t\tthe text tokens\n\t\txa : torch.Tensor, shape = (batch_size, n_mels, n_audio_ctx)\n\t\t\tthe encoded audio features to be attended on\n\t\t\"\"\"",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tmask",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tmask = torch.empty(n_ctx, n_ctx).fill_(-np.inf).triu_(1)\n\t\tself.register_buffer(\"mask\", mask, persistent=False)\n\tdef forward(self, x: Tensor, xa: Tensor, kv_cache: Optional[Tensor] = None, offset: Optional[Tensor] = 0):\n\t\t\"\"\"\n\t\tx : torch.LongTensor, shape = (batch_size, <= n_ctx)\n\t\t\tthe text tokens\n\t\txa : torch.Tensor, shape = (batch_size, n_mels, n_audio_ctx)\n\t\t\tthe encoded audio features to be attended on\n\t\t\"\"\"\n\t\t# minus one because we pre allocate kv_cache",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = self.token_embedding(x) + self.positional_embedding[offset:offset + x.shape[-1]]\n\t\tx = x.to(xa.dtype)\n\t\tcrossAttentionQKs = torch.zeros((len(self.blocks), x.shape[0], self.n_head, x.shape[1], xa.shape[1]))\n\t\tfor blockIndex in range(len(self.blocks)):\n\t\t\tblock = self.blocks[blockIndex]\n\t\t\tx, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=kv_cache)\n\t\t\t#x, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=None)\n\t\t\tcrossAttentionQKs[blockIndex] = crossAttentionQK\n\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = x.to(xa.dtype)\n\t\tcrossAttentionQKs = torch.zeros((len(self.blocks), x.shape[0], self.n_head, x.shape[1], xa.shape[1]))\n\t\tfor blockIndex in range(len(self.blocks)):\n\t\t\tblock = self.blocks[blockIndex]\n\t\t\tx, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=kv_cache)\n\t\t\t#x, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=None)\n\t\t\tcrossAttentionQKs[blockIndex] = crossAttentionQK\n\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcrossAttentionQKs",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tcrossAttentionQKs = torch.zeros((len(self.blocks), x.shape[0], self.n_head, x.shape[1], xa.shape[1]))\n\t\tfor blockIndex in range(len(self.blocks)):\n\t\t\tblock = self.blocks[blockIndex]\n\t\t\tx, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=kv_cache)\n\t\t\t#x, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=None)\n\t\t\tcrossAttentionQKs[blockIndex] = crossAttentionQK\n\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs\nclass Whisper(nn.Module):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tblock",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tblock = self.blocks[blockIndex]\n\t\t\tx, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=kv_cache)\n\t\t\t#x, crossAttentionQK = block(x, xa, mask=self.mask, kv_cache=None)\n\t\t\tcrossAttentionQKs[blockIndex] = crossAttentionQK\n\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs\nclass Whisper(nn.Module):\n\tdef __init__(self, dims: ModelDimensions, model: str):\n\t\tsuper().__init__()",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcrossAttentionQKs[blockIndex]",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tcrossAttentionQKs[blockIndex] = crossAttentionQK\n\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs\nclass Whisper(nn.Module):\n\tdef __init__(self, dims: ModelDimensions, model: str):\n\t\tsuper().__init__()\n\t\tself.type = model\n\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tx",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tx = self.ln(x)\n\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs\nclass Whisper(nn.Module):\n\tdef __init__(self, dims: ModelDimensions, model: str):\n\t\tsuper().__init__()\n\t\tself.type = model\n\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tlogits",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tlogits = (x @ torch.transpose(self.token_embedding.weight.to(x.dtype), 0, 1)).float()\n\t\treturn logits, kv_cache, crossAttentionQKs\nclass Whisper(nn.Module):\n\tdef __init__(self, dims: ModelDimensions, model: str):\n\t\tsuper().__init__()\n\t\tself.type = model\n\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,\n\t\t\tself.dims.n_audio_ctx,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.type",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.type = model\n\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,\n\t\t\tself.dims.n_audio_ctx,\n\t\t\tself.dims.n_audio_state,\n\t\t\tself.dims.n_audio_head,\n\t\t\tself.dims.n_audio_layer,\n\t\t)\n\t\tself.decoder = TextDecoder(",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.dims",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.dims = dims\n\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,\n\t\t\tself.dims.n_audio_ctx,\n\t\t\tself.dims.n_audio_state,\n\t\t\tself.dims.n_audio_head,\n\t\t\tself.dims.n_audio_layer,\n\t\t)\n\t\tself.decoder = TextDecoder(\n\t\t\tself.dims.n_vocab,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.encoder",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.encoder = AudioEncoder(\n\t\t\tself.dims.n_mels,\n\t\t\tself.dims.n_audio_ctx,\n\t\t\tself.dims.n_audio_state,\n\t\t\tself.dims.n_audio_head,\n\t\t\tself.dims.n_audio_layer,\n\t\t)\n\t\tself.decoder = TextDecoder(\n\t\t\tself.dims.n_vocab,\n\t\t\tself.dims.n_text_ctx,",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.decoder",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tself.decoder = TextDecoder(\n\t\t\tself.dims.n_vocab,\n\t\t\tself.dims.n_text_ctx,\n\t\t\tself.dims.n_text_state,\n\t\t\tself.dims.n_text_head,\n\t\t\tself.dims.n_text_layer,\n\t\t)\n\tdef embed_audio(self, mel: torch.Tensor):\n\t\treturn self.encoder.forward(mel)\n\tdef logits(self, tokens: torch.Tensor, audio_features: torch.Tensor):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tkv_cache",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tkv_cache = self.new_kv_cache(tokens.shape[0], tokens.shape[-1])\n\t\toutput, _, _ = self.decoder.forward(tokens, audio_features, kv_cache=torch.from_numpy(kv_cache), offset=0)\n\t\treturn output\n\tdef forward(self, mel: torch.Tensor, tokens: torch.Tensor) -> Dict[str, torch.Tensor]:\n\t\tkv_cache = self.new_kv_cache(tokens.shape[0], tokens.shape[-1])\n\t\toutput, _, _ = self.decoder(tokens, self.encoder(mel), kv_cache=torch.from_numpy(kv_cache), offset=0)\n\t\treturn output\n\t@property\n\tdef device(self):\n\t\treturn torch.device(\"cpu\")",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tkv_cache",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\tkv_cache = self.new_kv_cache(tokens.shape[0], tokens.shape[-1])\n\t\toutput, _, _ = self.decoder(tokens, self.encoder(mel), kv_cache=torch.from_numpy(kv_cache), offset=0)\n\t\treturn output\n\t@property\n\tdef device(self):\n\t\treturn torch.device(\"cpu\")\n\t@property\n\tdef is_multilingual(self):\n\t\treturn self.dims.n_vocab == 51865\n\tdef new_kv_cache(self, n_group: int, length: int):",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = [8, n_group, length, 384]\n\t\telif self.type == \"base.en\" or self.type == \"base\":\n\t\t\tsize = [12, n_group, length, 512]\n\t\telif self.type == \"small.en\" or self.type == \"small\":\n\t\t\tsize = [24, n_group, length, 768]\n\t\telif self.type == \"medium.en\" or self.type == \"medium\":\n\t\t\tsize = [48, n_group, length, 1024]\n\t\telif self.type == \"large\" or self.type == \"large-v1\" or self.type == \"large-v2\" or self.type == \"large-v3\" or self.type == \"large-v3-turbo\":\n\t\t\tsize = [64, n_group, length, 1280]\n\t\telse:",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = [12, n_group, length, 512]\n\t\telif self.type == \"small.en\" or self.type == \"small\":\n\t\t\tsize = [24, n_group, length, 768]\n\t\telif self.type == \"medium.en\" or self.type == \"medium\":\n\t\t\tsize = [48, n_group, length, 1024]\n\t\telif self.type == \"large\" or self.type == \"large-v1\" or self.type == \"large-v2\" or self.type == \"large-v3\" or self.type == \"large-v3-turbo\":\n\t\t\tsize = [64, n_group, length, 1280]\n\t\telse:\n\t\t\traise ValueError(f\"Unsupported model type: {self.type}\")\n\t\treturn np.zeros(size, dtype=np.float32)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = [24, n_group, length, 768]\n\t\telif self.type == \"medium.en\" or self.type == \"medium\":\n\t\t\tsize = [48, n_group, length, 1024]\n\t\telif self.type == \"large\" or self.type == \"large-v1\" or self.type == \"large-v2\" or self.type == \"large-v3\" or self.type == \"large-v3-turbo\":\n\t\t\tsize = [64, n_group, length, 1280]\n\t\telse:\n\t\t\traise ValueError(f\"Unsupported model type: {self.type}\")\n\t\treturn np.zeros(size, dtype=np.float32)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = [48, n_group, length, 1024]\n\t\telif self.type == \"large\" or self.type == \"large-v1\" or self.type == \"large-v2\" or self.type == \"large-v3\" or self.type == \"large-v3-turbo\":\n\t\t\tsize = [64, n_group, length, 1280]\n\t\telse:\n\t\t\traise ValueError(f\"Unsupported model type: {self.type}\")\n\t\treturn np.zeros(size, dtype=np.float32)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tsize",
+        "kind": 5,
+        "importPath": "whisper-onnx-exporter.model",
+        "description": "whisper-onnx-exporter.model",
+        "peekOfCode": "\t\t\tsize = [64, n_group, length, 1280]\n\t\telse:\n\t\t\traise ValueError(f\"Unsupported model type: {self.type}\")\n\t\treturn np.zeros(size, dtype=np.float32)",
+        "detail": "whisper-onnx-exporter.model",
+        "documentation": {}
+    },
+    {
+        "label": "sess",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "sess = ort.InferenceSession(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnc\",\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(sess.get_providers())",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sess",
+        "kind": 5,
+        "importPath": "test_npu",
+        "description": "test_npu",
+        "peekOfCode": "sess = ort.InferenceSession(\n    \"model.onnx\",\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(\"Actual providers:\")\nprint(sess.get_providers())",
+        "detail": "test_npu",
         "documentation": {}
     }
 ]
