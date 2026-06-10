@@ -1,0 +1,10 @@
+[
+    {
+        "label": "main_export",
+        "importPath": "optimum.exporters.onnx",
+        "description": "optimum.exporters.onnx",
+        "isExtraImport": true,
+        "detail": "optimum.exporters.onnx",
+        "documentation": {}
+    }
+]
