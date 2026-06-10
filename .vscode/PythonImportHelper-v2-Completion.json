@@ -1331,11 +1331,20 @@
         "documentation": {}
     },
     {
+        "label": "model",
+        "kind": 5,
+        "importPath": "embed_onnx",
+        "description": "embed_onnx",
+        "peekOfCode": "model = onnx.load(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnx\",\n    load_external_data=True\n)\nonnx.save_model(\n    model,\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder_embedded.onnx\",\n    save_as_external_data=False\n)",
+        "detail": "embed_onnx",
+        "documentation": {}
+    },
+    {
         "label": "so",
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "so = ort.SessionOptions()\nso.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
+        "peekOfCode": "so = ort.SessionOptions()\nso.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(sess.get_providers())",
         "detail": "main",
         "documentation": {}
     },
@@ -1344,7 +1353,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "so.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
+        "peekOfCode": "so.log_severity_level = 0\nsess = ort.InferenceSession(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(sess.get_providers())",
         "detail": "main",
         "documentation": {}
     },
@@ -1353,7 +1362,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "sess = ort.InferenceSession(\n    \"encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)",
+        "peekOfCode": "sess = ort.InferenceSession(\n    \"whisper-onnx-exporter/onnx-models/tiny/encoder.onnx\",\n    sess_options=so,\n    providers=[\"VSINPUExecutionProvider\"]\n)\nprint(sess.get_providers())",
         "detail": "main",
         "documentation": {}
     },
