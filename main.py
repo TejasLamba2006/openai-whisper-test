@@ -4,7 +4,7 @@ so = ort.SessionOptions()
 so.log_severity_level = 0
 
 sess = ort.InferenceSession(
-    "whisper-onnx-exporter/onnx-models/tiny/encoder.onnx",
+    "whisper-onnx-exporter/onnx-models/tiny/encoder_embedded.onnx",
     sess_options=so,
     providers=["VSINPUExecutionProvider"]
 )
